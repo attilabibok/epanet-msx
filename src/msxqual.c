@@ -1287,7 +1287,18 @@ void addSource(int n, Psource source, double volout, long dt)
 
           case FLOWPACED:
               massadded = s*volout;
-              break;
+			  break;
+
+		// Fictional "Source" similar to setpoint:
+		// Mass added is difference between source
+		// & node concen. times outflow volume
+		// !!!It also reduces concentration to 
+		// the setting!!!
+
+		  case FIXED:
+				  massadded = (s - MSX.Node[n].c[m])*volout;
+			  break;
+
         }
 
     // --- adjust nodal concentration to reflect source addition

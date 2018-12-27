@@ -110,7 +110,8 @@ typedef  float REAL4;
                 {CONCEN,               //    inflow concentration
                  MASS,                 //    mass inflow booster
                  SETPOINT,             //    setpoint booster
-                 FLOWPACED};           //    flow paced booster
+                 FLOWPACED,            //    flow paced booster
+                 FIXED};           //    setpoint booster/extractor - fictional type for modleing purposes           
 
  enum UnitSystemType                   // Unit system:
                  {US,                  //   US

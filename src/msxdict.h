@@ -24,7 +24,7 @@ static char *ReportWords[]  = {"NODE", "LINK", "SPECIE", "FILE", "PAGESIZE", NUL
 static char *OptionTypeWords[] = {"AREA_UNITS", "RATE_UNITS", "SOLVER", "COUPLING",
                                   "TIMESTEP", "RTOL", "ATOL", "COMPILER", NULL};  //1.1.00
 static char *CompilerWords[]   = {"NONE", "VC", "GC", NULL};                      //1.1.00
-static char *SourceTypeWords[] = {"CONC", "MASS", "SETPOINT", "FLOW", NULL};      //(FS-01/10/2008 To fix bug 11)
+static char *SourceTypeWords[] = {"CONC", "MASS", "SETPOINT", "FLOW", "FIXED", NULL};      //(FS-01/10/2008 To fix bug 11) || AB - added FIXED type
 static char *MixingTypeWords[] = {"MIXED", "2COMP", "FIFO", "LIFO", NULL};
 static char *MassUnitsWords[]  = {"MG", "UG", "MOLE", "MMOL", NULL};
 static char *AreaUnitsWords[]  = {"FT2", "M2", "CM2", NULL};
